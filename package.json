@@ -4,6 +4,7 @@
   "description": "CRUD TASKS",
   "main": "backend/app.js",
   "type": "module",
+  "homepage": "https://atabdessamia.github.io/MERN-TODO-TASKS/",
   "scripts": {
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
