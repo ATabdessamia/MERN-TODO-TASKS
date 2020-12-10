@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const connectDb = async () => {
   try {
-    const con = await mongoose.connect(process.env.DATABASE, {
+    const con = await mongoose.connect(process.env.DATABASE_LOCAL, {
       useUnifiedTopology: true,
       useNewUrlParser: true,
       useCreateIndex: true,
