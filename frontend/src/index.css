@@ -1,0 +1,16 @@
+/*ABDESSAMIA AIT LAHCEN*/
+@import url("https://fonts.googleapis.com/css2?family=Megrim&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Megrim", cursive !important;
+  margin: 0;
+}
+
+.mark {
+  text-decoration: line-through;
+  text-decoration-color: #3d5af1;
+  text-decoration-style: double;
+}
