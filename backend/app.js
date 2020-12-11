@@ -23,7 +23,7 @@ if (process.env.NODE_ENV === "production") {
 
   app.get("*", (req, res) =>
     res
-      .setHeader("Content-Type", "application/json")
+      .setHeader("content-type", "text/html")
       .sendFile(path.resolve(path.resolve(), "frontend", "build", "index.html"))
   );
 } else {
