@@ -1,12 +1,9 @@
 import path from "path";
 import express from "express";
 import morgan from "morgan";
-import dotenv from "dotenv";
 
 import taskRoutes from "./routes/taskRoutes.js";
 import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
-
-dotenv.config();
 
 const app = express();
 
@@ -22,9 +19,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static(path.join(path.resolve(), "/frontend/build")));
 
   app.get("*", (req, res) =>
-    res
-      .setHeader("content-type", "text/html")
-      .sendFile(path.resolve(path.resolve(), "frontend", "build", "index.html"))
+    res.sendFile(
+      path.resolve(path.resolve(), "frontend", "build", "index.html")
+    )
   );
 } else {
   app.get("/", (req, res) => {

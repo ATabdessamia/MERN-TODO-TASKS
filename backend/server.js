@@ -1,10 +1,12 @@
 import color from "colors";
 import dotenv from "dotenv";
 
-import app from "./app.js";
 import connectDb from "./config/db.js";
 
 dotenv.config();
+
+import app from "./app.js";
+
 connectDb();
 
 const PORT = process.env.PORT || 8000;
