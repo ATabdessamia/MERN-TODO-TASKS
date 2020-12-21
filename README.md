@@ -1,2 +1,2 @@
 # MERN-TODO-TASKS
-tasks management app
+use [npm run dev](https://) to see my joke :sunglasses: 
